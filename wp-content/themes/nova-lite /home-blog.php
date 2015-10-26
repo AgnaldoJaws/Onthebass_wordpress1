@@ -1,35 +1,40 @@
 <div class="container content">
 	
-    <div class="row">
+    <div class="row " >
 
         <div class="<?php echo novalite_template('span')." ".novalite_template('sidebar'); ?>"> 
 
-            <div class="row">
+            <div class="row" id="row1">
             
                 <?php if ( have_posts() ) :  ?>
         
                     <?php while ( have_posts() ) : the_post(); ?>
+           
+             <div class="content-main">
+            	<div class="title">
+						<a href="<?php the_permalink(); ?>" ><h3><?php the_title();?></h3></a>
+						</div>
+						
+						<div class="imagem">
+						<a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail(array(50,50))?></a>
+						</div>			
+					
+						
+						<div class="texto">
+						<a href="<?php the_permalink(); ?>" >	<?php the_excerpt();?>	</a>
+						</div>
+						
             
-                    <div class="pin-article <?php echo novalite_template('span'); ?>" >
-                
-                        <?php do_action('novalite_postformat'); ?>
-                    
-                        <div style="clear:both"></div>
-                        
-                    </div>
+            
+            </div>
+                   
+						
+				
+						
                     
                     <?php endwhile; else:  ?>
             
-                    <div class="pin-article <?php echo novalite_template('span'); ?>" >
-                        
-                        <article class="article">
-        
-                            <h1 class="title"><?php _e( 'Not found',"novalite" ) ?></h1>           
-                            <p><?php _e( 'Sorry, no posts matched found ',"novalite" ) ?></p>
-                         
-                        </article>
-                        
-                    </div>
+                    
                         
                 <?php endif; ?>
             </div>

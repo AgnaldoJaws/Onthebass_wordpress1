@@ -6,6 +6,7 @@
 	
 	get_template_part('home-blog');
 	
-	get_footer(); 
-
+	get_footer();
+	
+	
 ?>

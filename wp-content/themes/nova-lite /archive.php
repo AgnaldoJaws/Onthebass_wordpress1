@@ -15,7 +15,7 @@
 ?> 
 
 
-<section id="subheader">
+<section id="subhead">
 	<div class="container">
     	<div class="row">
             <div class="span12">

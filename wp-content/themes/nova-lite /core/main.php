@@ -466,20 +466,20 @@ if (!function_exists('novalite_setup')) {
 		if (novalite_setting('novalite_body_background')):
 			$background = novalite_setting('novalite_body_background');
 		else:
-			$background = "/inc/images/background/patterns/pattern12.jpg";
+			$background = "/inc/images/background/patterns/fundo1.png";
 		endif;
 		
-		add_theme_support( 'custom-background', array(
+		/*add_theme_support( 'custom-background', array(
 			'default-color' => 'f3f3f3',
 			'default-image' => get_template_directory_uri() . $background,
-		) );
+		) );*/
 	
-		add_image_size( 'blog', 1170,429, TRUE ); 
-		add_image_size( 'slide', 1170,429, TRUE ); 
+		/*add_image_size( 'blog', 50,50, TRUE ); 
+		add_image_size( 'slide', 50,50, TRUE ); 
 		
-		add_image_size( 'large', 449,304, TRUE ); 
-		add_image_size( 'medium', 290,220, TRUE ); 
-		add_image_size( 'small', 211,150, TRUE ); 
+		add_image_size( 'large', 50,50, TRUE ); 
+		add_image_size( 'medium', 50,50, TRUE ); 
+		add_image_size( 'small', 50,50, TRUE ); */
 
 		register_nav_menu( 'main-menu', 'Main menu' );
 	

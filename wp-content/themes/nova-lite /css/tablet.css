@@ -4,6 +4,41 @@
 	background:url(../inc/images/background/patterns/fundo1.png);
 	
 }
+
+.container {
+	
+	margin-top: -220px;
+}
+#panel ul  {
+	
+	
+	margin-top: -500px;
+	float: left;
+}
+#a{
+	
+	margin-top: -100px;
+}
+
+#menu {
+	
+	margin-top: 290px;
+	height: 63px;
+	width:100%;
+	background-color: #444444;
+	}
+	
+	#menu ul li {
+	
+	float: left;
+	}
+	#panel  {
+	
+	width: 1px;
+	margin-left: -20px;
+	
+}
+
 	.row{
 	
 	margin-top: 120px;
@@ -16,6 +51,20 @@
 	
 	
 }
+
+.texto {
+	
+	text-align:justify;
+	margin-left:155px;
+	margin-top: -157px;
+	
+}
+
+.title {
+	
+	margin-left: 200px;
+	margin-top: -20px;
+}
 }
 
 
@@ -27,6 +76,12 @@
 	background:url(../inc/images/background/patterns/fundo1.png);
 	
 }
+
+.container {
+	
+	margin-top: 200px;
+}
+
 
 .row{
 	
